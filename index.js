@@ -124,6 +124,10 @@ const exists = await conn.isOnWhatsApp (gg)
 console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
+if (text.includes("#say")){
+  const teks = text.replace(/#say /, "")
+conn.sendMessage(id, teks, MessageType.text)
+}	
 
 //ChatA187ID
 else if (text == 'assalamualaikum'){
@@ -175,7 +179,7 @@ else if (text == '#donasi'){
 conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator NTGXZFX BOT wa.me/+6285865213494* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
