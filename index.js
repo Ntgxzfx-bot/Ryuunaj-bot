@@ -151,7 +151,7 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner NTGXZFX BOT wa.me/+6285865213494* ' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
