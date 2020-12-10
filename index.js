@@ -941,13 +941,13 @@ else if (text == '#menu'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 :https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
 }
 else if (text == '#menu2'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
 }
 else if (text == '#menu3'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
 }
 else if (text == '#menu4'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
