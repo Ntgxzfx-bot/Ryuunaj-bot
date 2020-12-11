@@ -1105,6 +1105,34 @@ if (text.includes("!pokemon"))
     });
     }
 
+	else if (text.includes("#tts")) {
+  var teks = text.split("#ttsid ")[1];
+  var path = require('path');
+  var text1 = teks.slice(6);
+  text1 = suara;
+  var suara = text.replace(/#ttsid/g, text1);
+  var filepath = 'mp3/bacot.wav';
+  
+  
+/*
+ * save audio file
+ */
+
+gtts.save(filepath, suara, function() {
+  console.log(`${filepath} MP3 SAVED!`)
+});
+await new Promise(resolve => setTimeout(resolve, 500));
+
+	if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
+  msg.reply("Text kepanjangan bro!")
+}else{
+
+const buffer = fs.readFileSync(filepath)
+	conn.sendMessage(id , buffer , MessageType.audio);
+
+ });
+ }
+
    else if (text.includes("!nama")) 
   {
     const cheerio = require('cheerio');
@@ -1168,7 +1196,7 @@ if (text.includes("!pokemon"))
     `, MessageType.text);
   });
   }
-   if (text.includes("!foto cewek"))
+   if (text.includes("!lasegar"))
    {
     var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -1198,7 +1226,7 @@ if (text.includes("!pokemon"))
     });
     }
 
-   if (text.includes("!foto cowok"))
+   if (text.includes("!milo"))
    {
     var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea"];
     var cowo = items[Math.floor(Math.random() * items.length)];
