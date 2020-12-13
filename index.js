@@ -124,10 +124,6 @@ const exists = await conn.isOnWhatsApp (gg)
 console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
-if (text.includes("#say")){
-  const teks = text.replace(/#say /, "")
-conn.sendMessage(id, teks, MessageType.text)
-}	
 
 //ChatA187ID
 else if (text == 'assalamualaikum'){
@@ -155,7 +151,7 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner NTGXZFX BOT wa.me/+6285865213494* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner NTGXZFX BOT wa.me/6285865213494* ' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
@@ -179,7 +175,7 @@ else if (text == '#donasi'){
 conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator NTGXZFX BOT wa.me/+6285865213494* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator NTGXZFX BOT wa.me/6285865213494* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -948,7 +944,7 @@ else if (text == '#menu2'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
 }
 else if (text == '#menu3'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oeg_' ,MessageType.text);
 }
 else if (text == '#menu4'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *NTGXZFX BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/ntgxzfx_?igshid=167egty7xo9oe_' ,MessageType.text);
@@ -1105,34 +1101,6 @@ if (text.includes("!pokemon"))
     });
     }
 
-	else if (text.includes("#tts")) {
-  var teks = text.split("#ttsid ")[1];
-  var path = require('path');
-  var text1 = teks.slice(6);
-  text1 = suara;
-  var suara = text.replace(/#ttsid/g, text1);
-  var filepath = 'mp3/bacot.wav';
-  
-  
-/*
- * save audio file
- */
-
-gtts.save(filepath, suara, function() {
-  console.log(`${filepath} MP3 SAVED!`)
-});
-await new Promise(resolve => setTimeout(resolve, 500));
-
-	if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
-  msg.reply("Text kepanjangan bro!")
-}else{
-
-const buffer = fs.readFileSync(filepath)
-	conn.sendMessage(id , buffer , MessageType.audio);
-
- });
- }
-
    else if (text.includes("!nama")) 
   {
     const cheerio = require('cheerio');
@@ -1196,7 +1164,7 @@ const buffer = fs.readFileSync(filepath)
     `, MessageType.text);
   });
   }
-   if (text.includes("!lasegar"))
+   if (text.includes("!foto cewek"))
    {
     var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl", "remaja cantik", "cewek korea", "cewek jepang"];
     var cewe = items[Math.floor(Math.random() * items.length)];
@@ -1226,7 +1194,7 @@ const buffer = fs.readFileSync(filepath)
     });
     }
 
-   if (text.includes("!milo"))
+   if (text.includes("!foto cowok"))
    {
     var items = ["cowo ganteng", "cogan", "korean boy", "chinese boy", "japan boy", "cowok indo ganteng", "cowok korea"];
     var cowo = items[Math.floor(Math.random() * items.length)];
@@ -1306,4 +1274,6 @@ if (text.includes("!alay")){
 
 
 })
+
+
 
